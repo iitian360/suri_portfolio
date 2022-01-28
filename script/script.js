@@ -12,10 +12,10 @@
 
 
 
-document.getElementById("html").addEventListener("click",function(){
-  location.href='https://freecodecamp.org/certification/sp48840/responsive-web-design';
-  // console.log('hii');
-});
+// document.getElementById("html").addEventListener("click",function(){
+//   location.href='https://freecodecamp.org/certification/sp48840/responsive-web-design';
+//   // console.log('hii');
+// });
 // document.getElementById("search").addEventListener("mouseover",function(){
 //   prompt('Search here');
 // });
@@ -31,3 +31,20 @@ burger.addEventListener("click",function(){
   searchbox.classList.toggle('v-resp');
   navbar.classList.toggle('h-nav-resp');
 })
+
+
+let html_btn=document.getElementById('html');
+html_btn.addEventListener('click', getcertificate);
+
+function getcertificate(){
+  const xhr= new XMLHttpRequest();
+
+  xhr.open('GET','./image/suraj.txt', true);
+ xhr.send();
+  xhr.onload=function(){
+  let img_box=document.getElementById('certificate-1');
+  console.log(img_box);
+  img_box.innerHTML=`${this.responseText}`;
+  }
+ 
+}
