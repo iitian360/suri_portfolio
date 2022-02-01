@@ -48,3 +48,21 @@ function getcertificate(){
   }
  
 }
+
+let searchtxt=document.getElementById('search');
+searchtxt.addEventListener('input',function(){
+    let inputval=searchtxt.value.toLowerCase();
+    notecard=document.getElementsByClassName('suraj');
+    Array.from(notecard).forEach(function(element){
+        let cardtxt=element.getElementsByTagName("p")[0].innerText;
+        
+        let divtxt=element.getElementsByTagName("div")[0].innerText;
+        if (divtxt.includes(inputval)||cardtxt.includes(inputval)){
+          element.style.display="block";  
+        }
+
+        else{
+            element.style.display="none";
+        }
+    })
+})
