@@ -51,7 +51,7 @@ font-family: 'Ubuntu', sans-serif; */
  }
 .nav_list li a{
   font-size: 20px;
-  color: white;
+  color: #000000;
  }
 
  .search_box{
@@ -71,12 +71,13 @@ font-family: 'Ubuntu', sans-serif; */
     /* margin-right:5px; */
     background:white;
     color: black;
+    border: 1px solid black;
     
 }
 .btn_sb{
-    color:white;
+    color:#000000;
    background: inherit;
-    border: 1px solid white;
+    border: 1px solid #000000;
     border-radius: 5px;
     font-size: 12px;
     padding: .2px 8px;
