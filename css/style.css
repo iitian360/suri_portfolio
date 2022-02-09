@@ -34,6 +34,7 @@ html{
     position: absolute;
     background-size: cover;
     background-blend-mode: darken;
+    
     z-index:-1;
     width: 100%;
     height: 100%;
@@ -49,7 +50,7 @@ html{
 .logo img{
     width: 65%;
    border-radius: 60%;
-   border: 2px solid #04426bee;
+   border: 2px solid hsla(204, 93%, 22%, 0.933);
    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
@@ -71,7 +72,7 @@ html{
 .nav_list li a{
    text-decoration: none;
    font-size:20px;
-   color: #04426bee;
+   color: hsla(204, 93%, 22%, 0.933);
    font-family: 'Baloo Bhaijaan 2', cursive;
     
 
@@ -90,7 +91,7 @@ html{
 
 #search{
     padding: 3px 8px;
-  border: none;
+    border: none;
     border-radius: 9px;
     margin-top: 10px;
     margin-right:15px;
@@ -103,7 +104,7 @@ html{
     color:rgb(7, 0, 0);
     
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-    border: none;
+    border:none;
     border-radius: 5px;
     font-size: 12px;
     padding: 0.1px 6px;
@@ -169,7 +170,7 @@ display: none;
 }
 
 .big-text{
-    color:#035479ee;
+    color:hsla(199, 95%, 24%, 0.933);
     font-family: 'Baloo Bhaijaan 2', cursive;
    
 }
@@ -208,7 +209,7 @@ display: none;
 
 
 .text-para{
-    color: #04425fee;
+    color: hsla(199, 92%, 19%, 0.933);
     text-align: center;
     padding: 5px 70px;
     font-size: 17px;
@@ -234,7 +235,7 @@ display: none;
     height: 35%;
     border-radius: 50%;
     
-    border: 6px solid #035479ee;
+    border: 6px solid hsla(199, 95%, 24%, 0.933);
 }
 .massage{display: flex;
 padding:10px ;
@@ -297,7 +298,7 @@ padding:10px ;
     display: flex;
     height:100%;
     width: 95%;
-   
+    
     margin: auto;
     flex-direction: column;
     
@@ -308,7 +309,7 @@ padding:10px ;
 
 .skill{
     height: 50%;
-  
+   flex-wrap: wrap;
     
     display: flex;
     justify-content:start;
@@ -433,25 +434,7 @@ padding:10px ;
 #about{
     
  display: flex;   
-
-
-   
-   
-   
 }
-
-#image{
- 
-
-}
-.abt{
-    /* height:90%; */
-    
-   
-  
-}
-
-
 
 .abt-text{
     color:black;

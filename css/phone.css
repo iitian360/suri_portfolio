@@ -116,7 +116,7 @@ font-family: 'Ubuntu', sans-serif; */
 }
 
 .text-para{
-    color: #04425fee;
+    color: hsla(199, 92%, 19%, 0.933);
     text-align: center;
     padding: 5px 35px;
     font-size: 11px;
@@ -217,9 +217,7 @@ font-family: 'Ubuntu', sans-serif; */
 }
 
 /********************section-3*****************/
-.pitem{
-  
-}
+
 
 
 /*******************************section-4***********************/
