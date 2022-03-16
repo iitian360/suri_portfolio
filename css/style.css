@@ -10,145 +10,249 @@ font-family: 'Ubuntu', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Lobster&family=Merriweather:wght@300&family=Mochiy+Pop+P+One&family=Poppins:wght@200;300;700&family=Ubuntu:wght@500&display=swap');
 /* font-family: 'Lobster', cursive; */
 
-*{
-    padding: 0px;
-    margin: 0px;
-}
+
 html{
     scroll-behavior: smooth;
 }
 
-#navbar{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+}
+
+.navbar{
+    z-index: 10;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    height:10vh;
+    position: fixed;
+    width: 100%;
+    opacity: .9;
+    top: 0;
+    left: 0;
+}
+
+.brand{
+    color: whitesmoke;
+    font-weight: 900;
+    margin-left:10px;
+    font-size: 20px;
+}
+.brand span{
+    font-weight: 500;
+    color: rgb(255, 217, 0);
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #485461;
+    background-image: linear-gradient(135deg, #485461 0%, #28313b 74%);
+    overflow-x: hidden;
+    transform-style: preserve-3d;
+  }
+  
+
+.main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    position: sticky;
+    justify-content: space-between;
+    z-index:5;
+    overflow: hidden;
+    transform-origin: left;
+    transition: 0.7s;
+    transform-style: flat;
     top: 0px;
-    transition: top .3s;
-   
-   
 }
-#navbar::before{
-    content: "";
-   background: honeydew;
-    position: absolute;
-    background-size: cover;
-    background-blend-mode: darken;
-    
-    z-index:-1;
-    width: 100%;
-    height: 100%;
-}
-
-
-.logo{
-    
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-.logo img{
-    width: 65%;
-   border-radius: 60%;
-   border: 2px solid hsla(204, 93%, 22%, 0.933);
-   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-}
-
-.nav_list{
-   display: flex;
-   align-items: center;
-   width: 60%;
- 
-  
-    
-    
-}
-.nav_list li{
-   list-style: none;
-   padding:23px 30px;
-    
-
-}
-.nav_list li a{
-   text-decoration: none;
-   font-size:20px;
-   color: hsla(204, 93%, 22%, 0.933);
-   font-family: 'Baloo Bhaijaan 2', cursive;
-    
-
-}
-
-.nav_list li a:hover{
-    color: rgb(255, 0, 106);
-   
-}
-.search_box{
-   
-    width: 40%;
-    text-align: right;
-   
-}
-
-#search{
-    padding: 3px 8px;
-    border: none;
-    border-radius: 9px;
-    margin-top: 10px;
-    margin-right:15px;
-    color: white;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    
-}
-
-.btn_sb{
-    color:rgb(7, 0, 0);
-    
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-    border:none;
-    border-radius: 5px;
-    font-size: 12px;
-    padding: 0.1px 6px;
-    margin-right: 13px;
+.container.active .main {
+    animation: main-animation 0.7s ease;
     cursor: pointer;
-    font-family: 'Baloo Bhaijaan 2', cursive;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    /* border: 10px solid white; */
+    transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
+
+  }
+  
+  @keyframes main-animation {
+    from {
+      transform: translate(0);
+    }
+  
+    to {
+      transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
+    }
+  }
+
+header{
+    background: url("/image/bg.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
 }
 
-.btn_sb:hover{
-   background:rgb(99, 238, 7) ;
-   color: black;
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(59, 46, 38, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.backgroundb{
-    /* background-color: #ffffff;
-    background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);; */
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    background:white;
-
-}
-
-.background{
-    /* background: rgba(248, 252, 252, 0.6)url(/image/white-back.jpg);
-    background-color: #ffffff; */
-    background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);;
+.inner{
     
-    background-size: cover;
-    background-blend-mode: darken;
+    max-width: 35rem;
+    text-align: center;
+    color: #fff;
+    padding: 0 2rem;
+    text-transform: uppercase;
 }
 
 .burger{
-position: absolute;
-cursor: pointer;
-right: 5%;
-top: 10px;
-display: none;
-}
-.line{
-    width: 33px;
-    height: 4px;
-    margin: 3px 3px;
-    background-color:#0f0f0f;
+    background: inherit;
+    position: relative;
+    height: 5rem;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    cursor: pointer;
+
 }
 
+.bar{
+    position:relative;
+    background-color:whitesmoke;
+    height: 1.6px;
+    width: 25px;
+    border-radius: 3px;
+    transition: .8s;
+}
+
+.bar::before,.bar::after{
+    content: "";
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: whitesmoke;
+    transition: .8s;
+}
+
+.bar::before{
+    transform: translateY(-7px);
+}
+
+.bar::after{
+    transform: translateY(7px);
+}
+
+.container.active .bar{
+    transform: rotate(720deg);
+    background: transparent;
+}
+
+.container.active .bar::after{
+    transform: translateY(0) rotate(-45deg);
+    
+}
+.container.active .bar::before{
+    transform: translateY(0) rotate(45deg);
+    
+}
+
+.inner p{
+    font-family:'Baloo Bhaijaan 2', cursive;
+    font-size:13px;
+    color: white;
+}
+
+.btn{
+    padding: 7px 20px;
+    margin-top: 5px;
+    background: hsl(202, 100%, 45%);
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    transition: .5s;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.btn:hover{
+    padding:7px 30px ;
+   
+}
+
+.link{
+  position: absolute;
+  width: 30%;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index:inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    
+}
+
+.item__menu{
+    list-style: none;
+}
+
+.link a{
+  text-decoration: none;
+  color: #eee;
+  padding: 0.7rem 0;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  opacity: 0;
+  transform: translateX(100px);
+  animation: hide 0.5s forwards ease;
+
+}
+
+.container.active .link a {
+    animation: appear 0.7s forwards ease var(--i);
+  }
+
+  @keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+  }
+
+  @keyframes hide {
+    from {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+      to {
+        opacity: 0;
+        transform: translateX(100px);
+      }
+  }
 
 /********************* SECTION-CONTAINER**********************/
 
@@ -422,38 +526,151 @@ padding:10px ;
 
 /********************* section-4***************************/
 
-#section-4{
-  
-    /* border: 2px solid black; */
-    margin: 8px;
-    /* background-color: #bdd2e4; */
-    background-image: linear-gradient(315deg, #bdd4e7 0%, #919eb6 74%);
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+.about__me{
+    position: relative;
+    height:120vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: url("/image/abt_bg.jpg") center center/cover;
+   
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-#about{
+.abt__layer{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(36, 35, 35, 0.699);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.abt__inner{
+    position: relative;
+    /* background: white; */
+    width: 95%;
+    /* height: 100vh; */
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+    flex-direction: row-reverse;
+    transition: .7s;
+
+}
+
+.abt__image{
+   
+    height: 30vh;
+    width:20%;
+    transition: 1s;
+}
+
+.abt__image img{
+    width:100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+
+}
+
+.abt__inner:hover .abt__image{
+ animation-name: move;
+ animation-fill-mode: forwards;
+ animation-duration:5s;
+}
+
+.abt__text{
+    transition: .9s;
     
- display: flex;   
+}
+.heading__1{
+    opacity: 0;
 }
 
-.abt-text{
-    color:black;
-   font-family: 'Mochiy Pop P One', sans-serif;
-   padding: 0px 10px;
-   text-shadow: white 2px 2px 2px;
+.heading__1, .heading__2, .heading__3{
+    transition: 1s;
+}
+.abt__inner:hover .heading__1{
+    transition: 1s;
+    transform: translateX(-50px) scale(2);
+    color: yellow;
+    opacity: 1;
+    text-transform: capitalize;
     
 }
-.abt-head{
- color: wheat;
- text-shadow: black 3px 3px 3px;
- font-family: 'Ubuntu', sans-serif;
+
+.abt__inner:hover .heading__2{
+    transition: 1s;
+    transform: scale(1.5) translateX(30px);
+    color: red;
+}
+.abt__inner:hover .heading__3{
+    transition: 1s;
+    text-transform: capitalize;
+    /* color: palevioletred; */
+    transform: scale(1.4);
+   
+}
+.abt__inner:hover .heading__3 span{
+    color:hsl(41, 100%, 45%);
 }
 
-#text-1 p{
-   margin-top: 100px;
-   color: whitesmoke;
-   text-shadow: black 2px 2px 3px;
-} 
+.appear_block{
+    display: none;
+}
+
+@keyframes move {
+    0%{
+        transform: scale(1);
+    }
+
+    20%{
+        transform: scale(.6);
+    }
+    60%{
+        transform: translateY(-80px);
+    }
+    70%{
+        transform: scale(1) translateY(-80px);
+    }
+    100%{
+        transform: scale(1.09) translateY(-80px);
+    }
+}
+
+.abt__text{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-family:'Baloo Bhaijaan 2', cursive ;
+    width: 50%;
+    transition: 1s;
+}
+
+.hide__text.hide{
+    transition: 2s;
+    opacity: 0;
+    display:none;
+}
+
+
+.hide__text.hide .btn_abt{
+    background: rgb(255, 136, 0);
+}
+
+
+
+
+
 
 /***************************** Section-5******************/
 

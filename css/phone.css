@@ -19,81 +19,10 @@ font-family: 'Ubuntu', sans-serif; */
 /* body{background: rgb(68, 29, 2);} */
 
 /*********************nav bar*****************/
-#navbar{
-    flex-direction: column;
-    transition: all 0.5s ease-out;
-}
-.backgroundb{
-    /* background:rgba(24, 23, 23, 0.3) url(/image/navback.jpg); */
-    background: rgba(185, 170, 36, 0.8)url(/image/navback.jpg);
-    height: 355px;
-    
-    
-    
-}
 
-.logo img{
-    
-    width: 80%;
-   border-radius: 60%;
-  
-}
 
-.nav_list{
-    width: 60%;
-    flex-direction: column;
-}
+ 
 
-.nav_list li{
-  padding: 5px 10px;
-  margin-left: 5px;
-  font-family:'Baloo Bhaijaan 2', cursive;
- }
-.nav_list li a{
-  font-size: 20px;
-  color: #000000;
- }
-
- .search_box{
-   
-    width:40%;
-    text-align: center;
-    padding: 5px;
-   
-}
-
-#search{
-   
-    margin-bottom: 5px;
-    width: 80%;
-    border-radius: 9px;
-   
-    /* margin-right:5px; */
-    background:white;
-    color: black;
-    border: 1px solid black;
-    
-}
-.btn_sb{
-    color:#000000;
-   background: inherit;
-    border: 1px solid #000000;
-    border-radius: 5px;
-    font-size: 12px;
-    padding: .2px 8px;
-    
-   
-}
-.burger{
-    display: block;
-}
-
-.h-nav-resp{
-    height: 50px;
-}
-.v-resp{
-  visibility: hidden;
-}
 
 /************* section-1**********************/
 #bt-1{
@@ -221,44 +150,19 @@ font-family: 'Ubuntu', sans-serif; */
 
 
 /*******************************section-4***********************/
-#text-1 p{
-    margin-top: 100px;
-    color: whitesmoke;
-    text-shadow: black 2px 2px 3px;
-    margin-top: 200px;
- }
- #section-4{
-     max-width: 1200px;
- }
+.abt__inner{
+    /* position: relative; */
+    /* background: white; */
+    /* width: 95%; */
+    /* height: 100vh; */
+    /* display: flex; */
+    /* align-items:center; */
+    /* justify-content:space-evenly; */
+    /* flex-direction: row-reverse; */
+    flex-wrap: wrap;
+    /* transition: .7s; */
 
 
-.abt{
-    height:60%;
-    
-    margin: 0px 3px;
-}
-#image{
-    width: 30%;
-}
-
-.abt img{
-    height:100%;
-    opacity: .8;
-    margin-top: -80px;
-}
-
-
-.abt-text{
-    color:black;
-   font-family: 'Mochiy Pop P One', sans-serif;
-   padding: 0px 2px;
-   text-shadow: white 2px 2px 2px;
-    
-}
-.abt-head{
- color: wheat;
- text-shadow: black 3px 3px 3px;
- font-family: 'Ubuntu', sans-serif;
 }
 
 
