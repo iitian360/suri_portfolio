@@ -13,10 +13,27 @@
 </head>
 
 <body>
+    <style>
+        body {
+            animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
 
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
     <div class="container">
         <nav class="navbar">
-            <div class="brand">SURAJ<span>PATEL</span></div>
+            <div class="brand">Port<span>folio</span></div>
             <div class="burger">
                 <div class="bar"></div>
             </div>
@@ -27,14 +44,17 @@
                 <header>
                     <div class="overlay">
                         <div class="inner">
-                            <h2>i'm suraj patel</h2>
+                            <img id="brand" src="/image/suraj.jpg" alt="">
+                            <h2>i'm <strong style="color: rgb(255, 208, 0);"> suraj patel</strong></h2>
                             <p class="text">Welcome to my Digital Portfolio. This website depicts all of the work that I
                                 have
                                 completed throught my graduation
-                                from IIT Varanasi. It displayed the growth and the progress that I have made, as well as
-                                the assignments I am most proud of. Over the past 3 years, I have...</p>
+                                from <strong style="color: rgb(255, 208, 0);"> IIT(bhu) Varanasi</strong>. It displayed the growth and the progress that I have made, as well as
+                                the assignments I am most proud of. Over the past 3 years, I have put time, energy, and
+                                effort into my tasks and have learned more than ever because of it. Reflection of my
+                                work has shown me how far I have as both a student, and a person.</p>
 
-                            <button class="btn">read more</button>
+                            <button class="btn">explore with me</button>
 
                         </div>
                     </div>
@@ -45,55 +65,17 @@
         </div>
         <div class="link">
             <ul class="item__menu">
-                <li class="link_item"><a href="#" style="--i: 0.05s;"> home</a></li>
+                <li class="link_item"><a href="#" style="--i: 0.05s; color: orange;"> home</a></li>
                 <li class="link_item"><a href="#" style="--i: 0.15s;"> service</a></li>
                 <li class="link_item"><a href="#" style="--i: 0.25s;"> portfolio</a></li>
                 <li class="link_item"><a href="#" style="--i: 0.35s;"> blog</a></li>
-                <li class="link_item"><a href="#" style="--i: 0.45s;"> about</a></li>
-                <li class="link_item"><a href="#" style="--i: 0.55s;"> contact</a></li>
-                <li class="link_item"><a href="#" style="--i: 0.65s;"> project</a></li>
+                <li class="link_item"><a href="about.html" style="--i: 0.45s;"> about</a></li>
+                <li class="link_item"><a href="contact.html" style="--i: 0.55s;"> contact</a></li>
+                <li class="link_item"><a href="#section-2" target="_blank" style="--i: 0.65s;"> project</a></li>
 
             </ul>
         </div>
     </div>
-
-    <section id="section-1" class="background suraj">
-        <div class="big-container">
-            <div class="first-big">
-                <div class="big-text" id="bt-1">Hello<span>________________</span></div>
-                <!-- <div class="big-text"id="bt-2">Welcome To My Portfolio</div> -->
-                <div class="big-text" id="bt-2">I'm <span style="font-family:'Lobster', cursive;">Suraj Patel</span>
-                </div>
-                <div class="big-text" id="bt-4"><span style="color: red;">Programmer</span>, <span>Web Developer</span>
-                    and <span style="color: red;">Visual Designer</span></div>
-                <p class="text-para">Welcome to my Digital Portfolio. This website depicts all of the work that I have
-                    completed throught my graduation
-                    from IIT Varanasi. It displayed the growth and the progress that I have made, as well as
-                    the assignments I am most proud of. Over the past 3 years, I have put time, energy, and effort into
-                    my tasks and have
-                    learned more than ever because of it. Reflection of my work has shown me how far I have as both a
-                    student, and a person.
-                </p>
-                <div class="buttons">
-                    <button class="btn-ct">Hire me</button>
-                    <button class="btn-ct" id="btn-2">See Demo</button>
-                </div>
-            </div>
-            <div class="second-big">
-                <img id="brand" src="/image/suraj.jpg" alt="">
-                <div class="massage">
-                    <p style="margin-top: 4px; font-weight: 900;">___</p>
-                    <a href="mailto:sp48840@gmail.com"><img src="/icon/icons8-mail-24.png" alt="" class="icon"></a>
-                    <a href="https://www.facebook.com/profile.php?id=100009877366321"><img
-                            src="/icon/icons8-facebook-24.png" alt="" class="icon"></a>
-                    <a href="tel:+919793589037"><img src="/icon/icons8-phone-24.png" alt="" class="icon"></a>
-                    <p style="margin-top: 4px; font-weight: 900;">___</p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
 
     <section id="section-2" class="suraj">
         <p class="heading">**Skills**</p>
@@ -267,57 +249,7 @@
         </div>
     </section>
 
-    <div class="about__me">
-        <div class="abt__layer">
-            <div class="abt__inner">
-                <div class="abt__image">
-                    <img src="/image/suraj2.jpg" alt="suraj">
-                </div>
-                <div class="abt__text">
-                    <h3 class="heading__1">hi,</h3>
-                    <h1 class="heading__2">I'm Suraj</h1>
-                    <p class="heading__3"><span>programmer</span>, web Developer & <span>visual designer</span> </p>
-                    <p class="text">Welcome to my Digital Portfolio. This website depicts all of the work that I have
-                        completed throught my graduation
-                        from IIT Varanasi. It displayed the growth and the progress that I have made, as well as
-                        the assignments I am most proud of. Over the past 3 years, I have put time, energy, and effort
-                        into
-                        my tasks and have
-                        learned more than ever because of it. Reflection of my work has shown me how far I have as both
-                        a
-                        student, and a person.</p>
-                       
 
-                    <div class="hide__text hide">
-
-                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Possimus cumque iste et
-                            vero, ab voluptatum iure cum asperiores eligendi maxime perferendis optio voluptatem? Error
-                            quae
-                            itaque velit, necessitatibus sapiente voluptatum.</p>
-                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Possimus cumque iste et
-                            vero, ab voluptatum iure cum asperiores eligendi maxime perferendis optio voluptatem? Error
-                            quae
-                            itaque velit, necessitatibus sapiente voluptatum.</p>
-                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Possimus cumque iste et
-                            vero, ab voluptatum iure cum asperiores eligendi maxime perferendis optio voluptatem? Error
-                            quae
-                            itaque velit, necessitatibus sapiente voluptatum.</p>
-                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Possimus cumque iste et
-                            vero, ab voluptatum iure cum asperiores eligendi maxime perferendis optio voluptatem? Error
-                            quae
-                            itaque velit, necessitatibus sapiente voluptatum.</p>
-                    </div>
-
-
-                    <button class="btn" id="btn__abt" type="submit">read more</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
     <section id="section-5" class="suraj">

@@ -42,7 +42,8 @@ body{
     color: whitesmoke;
     font-weight: 900;
     margin-left:10px;
-    font-size: 20px;
+    font-size: 35px;
+    font-family:'Lobster', cursive;;
 }
 .brand span{
     font-weight: 500;
@@ -106,7 +107,7 @@ header{
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(59, 46, 38, 0.8);
+  background-color: rgba(54, 54, 56, 0.767);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -335,11 +336,20 @@ header{
 
 
 #brand{
-    width: 35%;
-    height: 35%;
+    transition: .3s;
+    width: 25%;
+    /* height: 35%; */
     border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
     
-    border: 6px solid hsla(199, 95%, 24%, 0.933);
+   
+}
+#brand:hover{
+    border-radius:2px;
+    transform: translateY(-20px);
+    transition: .3s;
+    /* border:2px solid yellow; */
 }
 .massage{display: flex;
 padding:10px ;
@@ -546,7 +556,7 @@ padding:10px ;
     height:100%;
     top: 0;
     left: 0;
-    background-color: rgba(36, 35, 35, 0.699);
+    background-color: rgba(49, 47, 47, 0.726);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -560,7 +570,7 @@ padding:10px ;
     display: flex;
     align-items:center;
     justify-content:space-evenly;
-    flex-direction: row-reverse;
+    flex-direction:column;
     transition: .7s;
 
 }
