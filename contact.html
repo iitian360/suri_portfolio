@@ -279,10 +279,12 @@ font-family: 'Ubuntu', sans-serif; */
             justify-content: center;
             flex-direction: column;
             margin: 10px;
+            transition:2s ;
            
         }
 
         .phone:hover{
+            transition: 2s;
             animation: move 2s ease;
             animation-fill-mode: forwards;
             animation-iteration-count: 1;
@@ -360,6 +362,22 @@ font-family: 'Ubuntu', sans-serif; */
             text-transform: uppercase;
             font-size: 14px;
         }
+
+        .social__media{
+            display: flex;
+            align-items: center;
+            /* justify-content: center; */
+        }
+
+        .media__link a img{
+            transition: .5s;
+            width: 70%;
+        }
+
+        .media__link a img:hover{
+            transform: rotate(180deg);
+        }
+
     </style>
 
     <div class="abt__nav">
@@ -422,9 +440,24 @@ font-family: 'Ubuntu', sans-serif; */
                                         </div>
                                     </div>
                                 </div>
+                                <div class="social__media">
+                                
+                                    <div class="media__link">
+                                       <a href="https://www.facebook.com/profile.php?id=100009877366321" target="_blank"><img src="/icon2/icons8-facebook-48.png" alt="facebook"></a> 
+                                    </div>
+                                    <div class="media__link">
+                                       <a href="https://www.instagram.com/looser_00000/" target="_blank"> <img src="/icon2/icons8-instagram-48.png" alt="instagram"></a>
+                                    </div>
+                                    <div class="media__link">
+                                       <a href="https://github.com/iitian360" target="_blank"> <img src="/icon2/icons8-github-48.png" target="_blank" alt="github"></a>
+                                    </div>
+
+                                    <div class="media__link">
+                                       <a href="https://www.linkedin.com/in/suraj-patel-76b912217/" target="_blank"> <img src="/icon2/icons8-linkedin-48.png" alt="linkedin"></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </header>
