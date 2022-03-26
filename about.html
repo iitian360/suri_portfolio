@@ -106,32 +106,33 @@
 
         .down_bar {
             position: fixed;
-            height: 5vh;
-            width: 10vh;
+            /* height: 5vh;
+            width: 10vh; */
             top: 85%;
             right: 1rem;
             transition: .3s;
         }
 
-        .down_bar img {
-            width: 90%;
+        .down_bar a svg {
+            /* width: 90%; */
             transition: 1s;
-            transform: rotate(90deg);
-            border-radius: 50%;
             cursor: pointer;
             opacity: 1;
+            color: white;
+            border-radius: 50%;
         }
 
-        .down_bar img:hover {
-            background: rgb(0, 162, 255);
+        .down_bar a svg:hover {
+            color: black;
+            background: white;
         }
 
-        .visible{
+        .visible {
             transition: 1s;
             opacity: 1;
         }
 
-        
+
 
         .move__icon {
             transition: .3s;
@@ -249,7 +250,11 @@
             </div>
 
             <div class="down_bar" id="down_bar">
-                <a href="#ppp"> <img src="/icon2/round_arrow.png" class="" id="down__icon" alt="down"></a>
+                <a href="#ppp"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z" />
+                    </svg></a>
             </div>
 
             <div class="navigation pull">
@@ -259,7 +264,7 @@
                     <li class="nav__link"><a href="#"> blog </a></li>
                     <li class="nav__link"><a href="#"> project </a></li>
                     <li class="nav__link"><a href="contact.html"> contact </a></li>
-                    <li class="nav__link"><a href="#"> portfolio </a></li>
+                    <li class="nav__link"><a href="gallery.html">Gallery</a></li>
                 </ul>
             </div>
         </div>
@@ -374,16 +379,297 @@
                             <button id="skill__btn" class="btn__skill">hire me</button>
                         </div>
                     </div>
-                    <h3 class="center abt__tag">My <span>Experties</span> </h3>
-                    <h5 class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                    <h3 class=" abt__tag">My <span>Experties</span> </h3>
+                    <!-- <h5 class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5> -->
+                </div>
+                <style>
+                    .skill_content {
+                        position: relative;
+                        /* border: 2px solid white; */
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                    }
 
-                    <div class="skill__main">
+                    .s__item {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        margin: 5px 10px;
+                        flex-wrap: wrap;
+                        position: relative;
 
+                        width: 60%;
+
+                    }
+
+                    .prop {
+                        display: flex;
+                        flex-direction: column;
+                        width: 35%;
+                        margin: 5px 6px;
+                        padding: 10px 5px;
+                        margin: 10px;
+                        transition: 1s;
+                        cursor: pointer;
+                        border-radius: 8px;
+
+
+                    }
+
+                    .prop:hover {
+                        transition: 1s;
+                        background: darkslategray;
+
+                    }
+
+                    .prop_img {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        flex-direction: row;
+                    }
+
+                    .text {
+                        color: white;
+
+                    }
+
+                    .s_head {
+                        font-size: 12px;
+                        color: whitesmoke;
+                        margin: 0px 5px;
+                    }
+
+                    .text_s {
+                        color: white;
+                        text-align: start;
+                        font-size: 12px;
+                        padding: 1px 5px;
+                    }
+                </style>
+                <div class="skill_content">
+                    <div class="s__item">
+                        <div class="prop">
+                            <div class="prop_img">
+                                <svg xmlns="http://www.w3.org/2000/svg" style="color:orangered; transition:.5s"
+                                    width="30" height="30" fill="currentColor" class="bi bi-filetype-html"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5Zm-9.736 7.35v3.999h-.791v-1.714H1.79v1.714H1V11.85h.791v1.626h1.682V11.85h.79Zm2.251.662v3.337h-.794v-3.337H4.588v-.662h3.064v.662H6.515Zm2.176 3.337v-2.66h.038l.952 2.159h.516l.946-2.16h.038v2.661h.715V11.85h-.8l-1.14 2.596H9.93L8.79 11.85h-.805v3.999h.706Zm4.71-.674h1.696v.674H12.61V11.85h.79v3.325Z" />
+                                </svg>
+                                <h4 class="s_head"> HTML/HTML5</h4>
+                            </div>
+                            <p class="text_s">Lorem dolor sit amet consectetur adipisicing elit. Illo nobis
+                                consectetur amet!</p>
+                        </div>
+
+                        <div class="prop">
+                            <div class="prop_img">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                    style="color:dodgerblue; transition:.5s" class="bi bi-filetype-css"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM3.397 14.841a1.13 1.13 0 0 0 .401.823c.13.108.289.192.478.252.19.061.411.091.665.091.338 0 .624-.053.859-.158.236-.105.416-.252.539-.44.125-.189.187-.408.187-.656 0-.224-.045-.41-.134-.56a1.001 1.001 0 0 0-.375-.357 2.027 2.027 0 0 0-.566-.21l-.621-.144a.97.97 0 0 1-.404-.176.37.37 0 0 1-.144-.299c0-.156.062-.284.185-.384.125-.101.296-.152.512-.152.143 0 .266.023.37.068a.624.624 0 0 1 .246.181.56.56 0 0 1 .12.258h.75a1.092 1.092 0 0 0-.2-.566 1.21 1.21 0 0 0-.5-.41 1.813 1.813 0 0 0-.78-.152c-.293 0-.551.05-.776.15-.225.099-.4.24-.527.421-.127.182-.19.395-.19.639 0 .201.04.376.122.524.082.149.2.27.352.367.152.095.332.167.539.213l.618.144c.207.049.361.113.463.193a.387.387 0 0 1 .152.326.505.505 0 0 1-.085.29.559.559 0 0 1-.255.193c-.111.047-.249.07-.413.07-.117 0-.223-.013-.32-.04a.838.838 0 0 1-.248-.115.578.578 0 0 1-.255-.384h-.765ZM.806 13.693c0-.248.034-.46.102-.633a.868.868 0 0 1 .302-.399.814.814 0 0 1 .475-.137c.15 0 .283.032.398.097a.7.7 0 0 1 .272.26.85.85 0 0 1 .12.381h.765v-.072a1.33 1.33 0 0 0-.466-.964 1.441 1.441 0 0 0-.489-.272 1.838 1.838 0 0 0-.606-.097c-.356 0-.66.074-.911.223-.25.148-.44.359-.572.632-.13.274-.196.6-.196.979v.498c0 .379.064.704.193.976.131.271.322.48.572.626.25.145.554.217.914.217.293 0 .554-.055.785-.164.23-.11.414-.26.55-.454a1.27 1.27 0 0 0 .226-.674v-.076h-.764a.799.799 0 0 1-.118.363.7.7 0 0 1-.272.25.874.874 0 0 1-.401.087.845.845 0 0 1-.478-.132.833.833 0 0 1-.299-.392 1.699 1.699 0 0 1-.102-.627v-.495ZM6.78 15.29a1.176 1.176 0 0 1-.111-.449h.764a.578.578 0 0 0 .255.384c.07.049.154.087.25.114.095.028.201.041.319.041.164 0 .301-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .085-.29.387.387 0 0 0-.153-.326c-.101-.08-.256-.144-.463-.193l-.618-.143a1.72 1.72 0 0 1-.539-.214 1 1 0 0 1-.351-.367 1.068 1.068 0 0 1-.123-.524c0-.244.063-.457.19-.639.127-.181.303-.322.527-.422.225-.1.484-.149.777-.149.304 0 .564.05.779.152.217.102.384.239.5.41.12.17.187.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.246-.181.923.923 0 0 0-.37-.068c-.216 0-.387.05-.512.152a.472.472 0 0 0-.184.384c0 .121.047.22.143.3a.97.97 0 0 0 .404.175l.621.143c.217.05.406.12.566.211.16.09.285.21.375.358.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Z" />
+                                </svg>
+                                <h4 class="s_head">CSS/CSS3</h4>
+                            </div>
+                            <p class="text_s">Lorem ipsum dcing elit. Illo nobis
+                                consectetur amet!</p>
+                        </div>
+
+                        <div class="prop">
+                            <div class="prop_img">
+                                <svg xmlns="http://www.w3.org/2000/svg" style="color:orange; transition:.5s" width="30"
+                                    height="30" fill="currentColor" class="bi bi-filetype-js" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M14 4.5V14a2 2 0 0 1-2 2H8v-1h4a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM3.186 15.29a1.176 1.176 0 0 1-.111-.449h.765a.578.578 0 0 0 .255.384c.07.049.153.087.249.114.095.028.202.041.319.041.164 0 .302-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .085-.29.387.387 0 0 0-.153-.326c-.101-.08-.255-.144-.462-.193l-.619-.143a1.72 1.72 0 0 1-.539-.214 1.001 1.001 0 0 1-.351-.367 1.068 1.068 0 0 1-.123-.524c0-.244.063-.457.19-.639.127-.181.303-.322.528-.422.224-.1.483-.149.776-.149.305 0 .564.05.78.152.216.102.383.239.5.41.12.17.186.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.247-.181.923.923 0 0 0-.369-.068c-.217 0-.388.05-.513.152a.472.472 0 0 0-.184.384c0 .121.048.22.143.3a.97.97 0 0 0 .405.175l.62.143c.218.05.406.12.566.211.16.09.285.21.375.358.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Zm-3.104-.033A1.32 1.32 0 0 1 0 14.791h.765a.576.576 0 0 0 .073.27.499.499 0 0 0 .454.246c.19 0 .33-.055.422-.164.092-.11.138-.265.138-.466v-2.745h.79v2.725c0 .44-.119.774-.357 1.005-.236.23-.564.345-.984.345a1.59 1.59 0 0 1-.569-.094 1.145 1.145 0 0 1-.407-.266 1.14 1.14 0 0 1-.243-.39Z" />
+                                </svg>
+                                <h4 class="s_head">JavaScript</h4>
+                            </div>
+                            <p class="text_s">Lorem sit amet consectetur adipisicing elit. Illo nobis
+                                consectetur amet!</p>
+                        </div>
+
+                        <div class="prop">
+                            <div class="prop_img">
+                                <svg xmlns="http://www.w3.org/2000/svg" style="color:dodgerblue; transition:.5s"
+                                    width="30" height="30" fill="currentColor" class="bi bi-snow3" viewBox="0 0 16 16">
+                                    <path d="M8 7.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1z" />
+                                    <path
+                                        d="M8 16a.5.5 0 0 1-.5-.5v-1.293l-.646.647a.5.5 0 0 1-.707-.708L7.5 12.793v-1.51l-2.053-1.232-1.348.778-.495 1.85a.5.5 0 1 1-.966-.26l.237-.882-1.12.646a.5.5 0 0 1-.5-.866l1.12-.646-.883-.237a.5.5 0 1 1 .258-.966l1.85.495L5 9.155v-2.31l-1.4-.808-1.85.495a.5.5 0 1 1-.259-.966l.884-.237-1.12-.646a.5.5 0 0 1 .5-.866l1.12.646-.237-.883a.5.5 0 1 1 .966-.258l.495 1.849 1.348.778L7.5 4.717v-1.51L6.147 1.854a.5.5 0 1 1 .707-.708l.646.647V.5a.5.5 0 0 1 1 0v1.293l.647-.647a.5.5 0 1 1 .707.708L8.5 3.207v1.51l2.053 1.232 1.348-.778.495-1.85a.5.5 0 1 1 .966.26l-.236.882 1.12-.646a.5.5 0 0 1 .5.866l-1.12.646.883.237a.5.5 0 1 1-.26.966l-1.848-.495-1.4.808v2.31l1.4.808 1.849-.495a.5.5 0 1 1 .259.966l-.883.237 1.12.646a.5.5 0 0 1-.5.866l-1.12-.646.236.883a.5.5 0 1 1-.966.258l-.495-1.849-1.348-.778L8.5 11.283v1.51l1.354 1.353a.5.5 0 0 1-.707.708l-.647-.647V15.5a.5.5 0 0 1-.5.5zm2-6.783V6.783l-2-1.2-2 1.2v2.434l2 1.2 2-1.2z" />
+                                </svg>
+                                <h4 class="s_head">React</h4>
+                            </div>
+                            <p class="text_s">Lorem ipsum dolor. Illo nobis
+                                consectetur amet!</p>
+                        </div>
+
+                        <div class="prop">
+                            <div class="prop_img">
+                                <svg xmlns="http://www.w3.org/2000/svg" style="color:rgb(124, 8, 231); transition:.5s"
+                                    width="30" height="30" fill="currentColor" class="bi bi-bar-chart-fill"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2z" />
+                                </svg>
+                                <h4 class="s_head">Data structure & Algorithm</h4>
+                            </div>
+                            <p class="text_s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nobis
+                                consectetur amet!</p>
+                        </div>
+                        <div class="prop">
+                            <div class="prop_img">
+                                <svg xmlns="http://www.w3.org/2000/svg" style="color:hsl(120, 94%, 50%); transition:.5s"
+                                    width="30" height="30" fill="currentColor" class="bi bi-code-slash"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" />
+                                </svg>
+                                <h4 class="s_head">C & C++</h4>
+                            </div>
+                            <p class="text_s">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="prop">
+                            <div class="prop_img">
+                                <svg xmlns="http://www.w3.org/2000/svg" style="color:rgb(236, 38, 193); transition:.5s"
+                                    width="30" height="30" fill="currentColor" class="bi bi-palette"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                    <path
+                                        d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8zm-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7z" />
+                                </svg>
+                                <h4 class="s_head">Web, UI/UX</h4>
+                            </div>
+                            <p class="text_s">Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
+                        </div>
+                    </div>
+
+                    <style>
+                        .pi_chart {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            width: 40%;
+                            margin: 0px 5px;
+                            /* background: white; */
+                            height: 80vh;
+                        }
+
+                        .skills {
+                            width: 30%;
+
+                        }
+
+                        .pi_chart:hover .skills {
+                            animation-name: bar;
+                            animation-duration: 5s;
+                            /* animation-iteration-count:; */
+                            animation-fill-mode: forwards;
+
+                        }
+
+
+
+                        @keyframes bar {
+
+                            from {
+                                width: 30%;
+
+                            }
+
+                            to {
+                                width: 100%;
+                            }
+
+                        }
+
+                        .line_item {
+                            list-style: none;
+                            color: white;
+                            margin: 0px 5px;
+                            border-radius: 10px;
+                            /* background: yellowgreen; */
+
+                            /* width: 20px; */
+                        }
+
+                        #html {
+                            background: orangered;
+                            width: 95%;
+                        }
+
+
+                        #css {
+                            background: rgb(59, 192, 245);
+                            width: 90%;
+                        }
+
+                        #react {
+                            background: blue;
+                            width: 55%;
+                        }
+
+                        #clang {
+                            background: green;
+                            width: 95%;
+                        }
+
+                        #cclang {
+                            background: orangered;
+                            width: 95%;
+                        }
+
+                        #ds {
+                            background: orangered;
+                            width: 95%;
+                        }
+
+                        #js {
+                            background: gold;
+                            width: 75%;
+                        }
+
+                        #ui {
+                            background: rgb(106, 170, 10);
+                            width: 90%;
+                        }
+
+                        #cclang {
+                            background: violet;
+                            width: 75%;
+                        }
+                    </style>
+                    <div class="pi_chart">
+                        <ul class="skills">
+                            <li class="line_item">HTML/HTML5</li>
+                            <li class="line_item" id="html"><strong>95%</strong></li>
+                            <li class="line_item">CSS</li>
+                            <li class="line_item" id="css"><strong>90%</strong></li>
+                            <li class="line_item">JavaScript</li>
+                            <li class="line_item" id="js"><strong>75%</strong></li>
+                            <li class="line_item">REACT</li>
+                            <li class="line_item" id="react"><strong>45%</strong></li>
+                            <li class="line_item">Ds & Algo</li>
+                            <li class="line_item" id="ds"><strong>80%</strong></li>
+                            <li class="line_item">C</li>
+                            <li class="line_item" id="clang"><strong>85%</strong></li>
+                            <li class="line_item">C++</li>
+                            <li class="line_item" id="ui"><strong>90%</strong></li>
+                            <li class="line_item">UI/UX</li>
+                            <li class="line_item" id="cclang"><strong>75%</strong></li>
+                        </ul>
                     </div>
                 </div>
+
+
             </div>
         </div>
     </div>
+
+
     <div id="ppp"></div>
     <script>
         const hide__text = document.querySelector('.hide__text');
@@ -408,17 +694,17 @@
 
         const down__icon = document.getElementById('down__icon');
         // const abt__inner=document.getElementsByClassName('abt__inner');
-        window.addEventListener("scroll", function() {showFunction()});
+        window.addEventListener("scroll", function () { showFunction() });
 
-    function showFunction() {
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            down__icon.classList.add('visible');
-        }
+        function showFunction() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                down__icon.classList.add('visible');
+            }
 
-        else if(document.body.scrollTop < 100 || document.documentElement.scrollTop <100){
-            down__icon.classList.remove('visible');
+            else if (document.body.scrollTop < 100 || document.documentElement.scrollTop < 100) {
+                down__icon.classList.remove('visible');
+            }
         }
-    }
 
 
     </script>
