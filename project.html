@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Merriweather:wght@300&family=Mochiy+Pop+P+One&family=Poppins:wght@200;300;700&family=Ubuntu:wght@500&display=swap');
+
+        /* font-family: 'Baloo Bhaijaan 2', cursive; */
+
+        .nav {
+            position: relative;
+            width: 100%;
+            /* z-index: 10; */
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            /* background: darkslategrey; */
+        }
+
+        .logo {
+            font-size: 30px;
+            font-weight: 600;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+            color: rgb(44, 54, 59);
+        }
+
+        .heading span {
+            font-size: 20px;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+            color: rgb(71, 71, 71);
+        }
+    </style>
+    <nav class="nav">
+        <div class="heading">
+            <div class="logo">Projects</div>
+            <span>Let's Grow Togather</span>
+        </div>
+
+    </nav>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+            animation: fadeInAnimation ease 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .container {
+            position: relative;
+            transition: .5s;
+            width: 100%;
+            height: 150vh;
+            top: 0;
+            left: 0;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* z-index: 5; */
+            /* background:rgb(206, 206, 206); */
+            /* background-blend-mode: hue; */
+            /* overflow: hidden; */
+        }
+
+        /* .box {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-around;
+            
+        }
+        .temp2{
+            margin: 30px;
+        }
+        .temp2 img {
+            width:30vh;
+        }
+
+        .temp1{
+            padding:10px 20px;
+        } */
+
+
+        .main {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            /* background-color: white; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .main_item {
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* flex-direction: column; */
+            flex-wrap: wrap;
+        }
+
+        .project {
+            position: relative;
+            width: 40vh;
+            height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 35px;
+            padding: 5px;
+            transition: .5s all ease;
+            flex-direction: column;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .project:hover {
+            background-color: rgba(202, 202, 202, 0.349);
+            transform: translateY(-10px);
+
+        }
+
+
+
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .head {
+            color: darkslategray;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .text {
+            font-size: 13px;
+            font-weight: 600;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.747);
+
+        }
+    </style>
+    <!-- <div class="box">
+        <div class="temp1">
+            <h3>Welcome to project section, here I staged all the infornatin related to my previous project</h3>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam deleniti in, facilis aut
+                qui, natus ut molestiae, ipsum veritatis eligendi assumenda quasi eaque placeat!</p>
+        </div>
+        <div class="temp2">
+            <img src="/image/grow.png" alt="null">
+        </div>
+    </div> -->
+    <style>
+        .pull__bar {
+            position: fixed;
+            height: 5vh;
+            width: 10vh;
+            top: 40%;
+            left: 1rem;
+        }
+
+        .pull__bar img {
+            width: 60%;
+            transition: 1s;
+            /* background-color: brown; */
+            box-shadow: rgba(119, 119, 119, 0.19) 0px 5px 20px, rgba(207, 207, 207, 0.23) 0px 6px 6px;
+            border-radius: 50%;
+            /* border: 1px; */
+        }
+
+        .pull__bar img:hover {
+            background-color: rgb(4, 168, 4);
+
+        }
+
+        .move__icon {
+            transition: .3s;
+            transform: translateX(110px) scale(1.3) rotate(540deg);
+            cursor: pointer;
+            background-color: rgb(240, 159, 8);
+
+        }
+
+        .navigation {
+            position: fixed;
+            /* width: 10%; */
+            /* height: auto; */
+            top: 25%;
+            left: 1rem;
+            transition: .5s;
+            /* background: black; */
+            /* border: 1px solid white; */
+            /* border-radius: 10px; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* padding:8px 10px; */
+            overflow: hidden;
+
+        }
+
+        .pull {
+            visibility: hidden;
+            transition: .5s;
+            transform: translateX(-110px);
+        }
+
+        .nav__link {
+            list-style: none;
+            line-height: 40px;
+        }
+
+        .nav__link a {
+            text-decoration: none;
+            color: white;
+            padding: 5px 0px;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+            text-transform: uppercase;
+        }
+
+        .nav__link a:hover {
+            transition: .5s;
+            /* border: 1.5px solid white; */
+            color: rgb(255, 217, 0);
+        }
+    </style>
+    <div class="container">
+        <div class="pull__bar">
+            <img src="/icon2/round_arrow.png" class="" id="pull__icon" alt="">
+        </div>
+
+        <div class="navigation pull">
+            <ul>
+                <li class="nav__link"><a href="/Index.html"> home </a></li>
+                <li class="nav__link"><a href="#"> service </a></li>
+                <li class="nav__link"><a href="#"> blog </a></li>
+                <li class="nav__link"><a href="#"> project </a></li>
+                <li class="nav__link"><a href="about.html"> about </a></li>
+                <li class="nav__link"><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+
+            <div class="main_item">
+                <div class="project">
+                    <img src="/icon2/icons8-snake-64.png" alt="snake">
+                    <div class="content">
+                        <p class="head">Snake Game</p>
+                        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="/icon2/icons8-task-64.png" alt="tsk">
+                    <div class="content">
+                        <p class="head">Task Manager</p>
+                        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="/icon2/icons8-news-64.png" alt="news">
+                    <div class="content">
+                        <p class="head">News</p>
+                        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="/icon2/icons8-food-64.png" alt="food">
+                    <div class="content">
+                        <p class="head">Food</p>
+                        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="/icon2/icons8-calculator-64.png" alt="calculator">
+                    <div class="content">
+                        <p class="head">Claculator</p>
+                        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="/icon2/icons8-education-64.png" alt="education">
+                    <div class="content">
+                        <p class="head">Educational Website</p>
+                        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="/icon2/icons8-food-64.png" alt="food">
+                    <div class="content">
+                        <p class="head">Food</p>
+                        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // pull bar script
+        const pull_icon = document.getElementById('pull__icon');
+        let navigat = document.querySelector('.navigation');
+
+        pull_icon.addEventListener('click', () => {
+            navigat.classList.toggle('pull');
+            pull_icon.classList.toggle('move__icon')
+        })
+
+    </script>
+
+</body>
+
+</html>
