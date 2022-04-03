@@ -129,14 +129,9 @@ html {
 
 .navigation {
     position: fixed;
-    /* width: 10%; */
-    /* height: auto; */
     top: 25%;
     left: 1rem;
     transition: .5s;
-    /* background: black; */
-    /* border: 1px solid white; */
-    /* border-radius: 10px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -203,9 +198,7 @@ html {
     top: 0;
     left: 0;
     background-color: rgba(49, 47, 47, 0.726);
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    
 }
 
 .skill__item {
