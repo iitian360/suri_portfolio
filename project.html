@@ -20,7 +20,7 @@
             z-index: 10;
             display: flex;
             align-items: center;
-            justify-content:space-between;
+            justify-content:flex-start;
             /* background: darkslategrey; */
         }
 
@@ -31,15 +31,19 @@
             color: rgb(44, 54, 59);
         }
 
-        .heading span {
-            font-size: 20px;
+         .trade {
+            font-size: 15px;
             font-family: 'Baloo Bhaijaan 2', cursive;
             color: rgb(71, 71, 71);
+            text-align: right;
         }
 
         .nav_item{
             display: flex;
            justify-content: flex-end;
+           /* background: #9e9e9eba; */
+           padding: 5px 10px;
+           margin: 5px 10px;
         }
         .link{
             list-style: none;
@@ -48,21 +52,31 @@
         }
         .link a{
             text-decoration: none;
+            font-family:'Baloo Bhaijaan 2', cursive ;
+            font-size: larger;
+            transition: .3s all ease;
+            color: black;
+            padding: 0px 10px;
 
+
+        }
+
+        .link a:hover{
+            color: rgb(198, 53, 0);
         }
     </style>
     <nav class="nav">
         <div class="heading">
             <div class="logo">Projects</div>
-            <span>Let's Grow Togather</span>
+            <div class="trade">Let's Grow Togather</div>
         </div>
 
         <ul class="nav_item" >
-           <li  class="link"><a href="#"> Home </a></li>
-           <li  class="link"><a href="#"> Project </a></li>
-           <li  class="link"><a href="#"> gallery </a></li>
-           <li  class="link"><a href="#"> contant </a></li>
-           <li  class="link"><a href="#"> about </a></li>
+           <li  class="link"><a href="Index.html"> Home </a></li>
+           <li  class="link"><a href="#"> blog </a></li>
+           <li  class="link"><a href="gallery.html"> gallery </a></li>
+           <li  class="link"><a href="contact.html"> contant </a></li>
+           <li  class="link"><a href="about.html"> about </a></li>
         </ul>
 
     </nav>
@@ -91,7 +105,7 @@
             position: relative;
             transition: .5s;
             width: 100%;
-            height: 150vh;
+            /* height: 150vh; */
             top: 0;
             left: 0;
 
@@ -107,7 +121,7 @@
         .main {
             position: absolute;
             width: 100%;
-            height: 100%;
+            /* height: 100%; */
             top: 0;
             left: 0;
             /* background-color: white; */

@@ -802,20 +802,6 @@ width: 40%;
     padding: 5px;
 }
 
-/********************8 footer**************************/
-
-#foot{
-    height: 15vh;
-    background:#0f0f0f;
-    margin: 8px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-
-}
-
-.footnot{
-    color:  white; font-size: 20px; text-align: center;
-}
-
 
 
 

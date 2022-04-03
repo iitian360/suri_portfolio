@@ -1,0 +1,39 @@
+.abt__tag {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.abt__tag span {
+    font-weight: 500;
+    color: rgb(255, 217, 0);
+}
+
+.abt__nav h5{
+    margin-left:.7rem;
+    font-size: 10px;
+    color: white;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 70%;
+
+}
+
+.contact form {
+    width:100%;
+}
+
+.massage {
+    /* position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* height: 100vh; */
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+}

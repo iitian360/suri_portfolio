@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Mochiy+Pop+P+One&family=Poppins:wght@200;300;700&family=Ubuntu:wght@500&display=swap');
+/* font-family: 'Merriweather', serif;
+font-family: 'Mochiy Pop P One', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Merriweather:wght@300&family=Mochiy+Pop+P+One&family=Poppins:wght@200;300;700&family=Ubuntu:wght@500&display=swap');
+
+/* font-family: 'Baloo Bhaijaan 2', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Lobster&family=Merriweather:wght@300&family=Mochiy+Pop+P+One&family=Poppins:wght@200;300;700&family=Ubuntu:wght@500&display=swap');
+/* font-family: 'Lobster', cursive; */
+
+.brand{
+    font-size: 30px;
+}
+
+.container.active .main {
+    animation: main-animation 0.7s ease;
+    /*
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+    /* border: 10px solid white; */
+    transform: perspective(1300px) rotateY(20deg) translateZ(200px) scale(0.45);
+
+  }
+
+  @keyframes main-animation {
+    from {
+      transform: translate(0);
+    }
+  
+    to {
+      transform: perspective(1300px) rotateY(20deg) translateZ(200px) scale(0.45);
+    }
+  }
+  
+  .btn{
+    padding: 5px 15px;
+    margin-top: 5px;
+    
+}
+
+
+
+
+
