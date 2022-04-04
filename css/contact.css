@@ -67,7 +67,7 @@ font-family: 'Ubuntu', sans-serif; */
             align-items: center;
             justify-content: center;
             z-index: 5;
-            overflow: hidden;
+            /* overflow: hidden; */
             transform-origin: left;
             transition: 0.7s;
             transform-style: flat;
@@ -146,7 +146,7 @@ font-family: 'Ubuntu', sans-serif; */
             align-items: center;
             justify-content: center;
             /* padding:8px 10px; */
-            overflow: hidden;
+            /* overflow: hidden; */
 
         }
 
