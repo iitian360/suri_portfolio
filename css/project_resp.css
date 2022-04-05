@@ -8,3 +8,36 @@
 .nav {
     justify-content: space-between;
 }
+
+.menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 50vw;
+    height: 100%;
+    background:darkslategrey;
+    opacity: .95;
+    transform: translateX(-100%);
+    transition: transform 300ms ease-in-out;
+    z-index: 10;
+
+    
+}
+
+.menu_item{
+    list-style: none;
+}
+
+.item a{
+    color: white;
+    text-decoration: none;
+
+}
+.item a:hover{
+    transition: .5s all ease;
+    color: orangered;
+}
+
+.close{
+    transform: none;
+}
