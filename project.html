@@ -5,66 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/project.css">
+    <link rel="stylesheet" media="screen and (max-width:593px)" href="/css/project_resp.css">
     <title>Project</title>
 </head>
 
 <body>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Merriweather:wght@300&family=Mochiy+Pop+P+One&family=Poppins:wght@200;300;700&family=Ubuntu:wght@500&display=swap');
-
-        /* font-family: 'Baloo Bhaijaan 2', cursive; */
-
-        .nav {
-            position: relative;
-            width: 100%;
-            z-index: 10;
-            display: flex;
-            align-items: center;
-            justify-content:flex-start;
-            /* background: darkslategrey; */
-        }
-
-        .logo {
-            font-size: 30px;
-            font-weight: 600;
-            font-family: 'Baloo Bhaijaan 2', cursive;
-            color: rgb(44, 54, 59);
-        }
-
-         .trade {
-            font-size: 15px;
-            font-family: 'Baloo Bhaijaan 2', cursive;
-            color: rgb(71, 71, 71);
-            text-align: right;
-        }
-
-        .nav_item{
-            display: flex;
-           justify-content: flex-end;
-           /* background: #9e9e9eba; */
-           padding: 5px 10px;
-           margin: 5px 10px;
-        }
-        .link{
-            list-style: none;
-            margin: 0px 10px;
-         
-        }
-        .link a{
-            text-decoration: none;
-            font-family:'Baloo Bhaijaan 2', cursive ;
-            font-size: larger;
-            transition: .3s all ease;
-            color: black;
-            padding: 0px 10px;
-
-
-        }
-
-        .link a:hover{
-            color: rgb(198, 53, 0);
-        }
-    </style>
+    
     <nav class="nav">
         <div class="heading">
             <div class="logo">Projects</div>
@@ -78,114 +25,19 @@
            <li  class="link"><a href="contact.html"> contant </a></li>
            <li  class="link"><a href="about.html"> about </a></li>
         </ul>
+        <div class="burger">
+            <div class="bar"></div>
+        </div>
 
     </nav>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Baloo Bhaijaan 2', cursive;
-            animation: fadeInAnimation ease 2s;
-            animation-iteration-count: 1;
-            animation-fill-mode: forwards;
-        }
 
-        @keyframes fadeInAnimation {
-            0% {
-                opacity: 0;
-
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        .container {
-            position: relative;
-            transition: .5s;
-            width: 100%;
-            /* height: 150vh; */
-            top: 0;
-            left: 0;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            
-        }
-
-        
-
-
-        .main {
-            position: absolute;
-            width: 100%;
-            /* height: 100%; */
-            top: 0;
-            left: 0;
-            /* background-color: white; */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        .main_item {
-            position: relative;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            /* flex-direction: column; */
-            flex-wrap: wrap;
-        }
-
-        .project {
-            position: relative;
-            width: 40vh;
-            height: 40vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 20px 35px;
-            padding: 5px;
-            transition: .5s all ease;
-            flex-direction: column;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        .project:hover {
-            background-color: rgba(202, 202, 202, 0.349);
-            transform: translateY(-10px);
-
-        }
-
-
-
-        .content {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-        }
-
-        .head {
-            color: darkslategray;
-            font-size: 16px;
-            font-weight: 600;
-            text-align: center;
-        }
-
-        .text {
-            font-size: 13px;
-            font-weight: 600;
-            text-align: center;
-            color: rgba(0, 0, 0, 0.747);
-
-        }
-    </style>
+    <script>
+        const burger=document.querySelector('.burger');
+        burger.addEventListener('click',()=>{
+            burger.classList.toggle('active');
+        })
+    </script>
+    
 
     <script>
         function openNav() {

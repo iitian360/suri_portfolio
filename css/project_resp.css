@@ -1,0 +1,10 @@
+.burger{
+    display: block;
+}
+
+.nav_item{
+    display: none;
+}
+.nav {
+    justify-content: space-between;
+}

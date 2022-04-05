@@ -1,0 +1,218 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Merriweather:wght@300&family=Mochiy+Pop+P+One&family=Poppins:wght@200;300;700&family=Ubuntu:wght@500&display=swap');
+
+        /* font-family: 'Baloo Bhaijaan 2', cursive; */
+
+        .nav {
+            position: relative;
+            width: 100%;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content:flex-start;
+            /* background: darkslategrey; */
+        }
+
+
+        /*  burger */
+        .burger{
+            background: inherit;
+            position: relative;
+            /* height: 5rem; */
+            width: 20px;
+            margin: 10px;
+            display: flex;
+            float: right;
+            align-items: flex-start;
+            justify-content:flex-end;
+            cursor: pointer;
+           display: none;
+              }
+              .bar{
+                  position:relative;
+                  width:20px;
+                  height: 2px;
+                  background-color: black;
+                  border-radius: 2px;
+                  transition: .5s;
+              }
+        
+              .bar::before, .bar::after{
+                  background-color: black;
+                  position: absolute;
+                  content: "";
+                  transition: .5s;
+                  height: inherit;width: inherit;
+        
+        
+              }
+        
+              .bar::before{
+                  transform: translateY(-7px);
+              }
+        
+              .bar::after{
+                  transform: translateY(7px);
+              }
+        
+              .burger.active .bar{
+                  background: transparent;
+                  transform: rotate(360deg);
+              }
+              .burger.active .bar::before{
+                  transform: translateY(0) rotate(45deg);
+                  background-color: red;
+              }
+              .burger.active .bar::after{
+                transform: translateY(0) rotate(-45deg);
+                background-color: red;
+              }
+
+        .logo {
+            font-size: 30px;
+            font-weight: 600;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+            color: rgb(44, 54, 59);
+        }
+
+         .trade {
+            font-size: 15px;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+            color: rgb(71, 71, 71);
+            text-align: right;
+        }
+
+        .nav_item{
+            display: flex;
+           justify-content: flex-end;
+           /* background: #9e9e9eba; */
+           padding: 5px 10px;
+           margin: 5px 10px;
+        }
+        .link{
+            list-style: none;
+            margin: 0px 10px;
+         
+        }
+        .link a{
+            text-decoration: none;
+            font-family:'Baloo Bhaijaan 2', cursive ;
+            font-size: larger;
+            transition: .3s all ease;
+            color: black;
+            padding: 0px 10px;
+
+
+        }
+
+        .link a:hover{
+            color: rgb(198, 53, 0);
+        }
+ 
+
+    
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+            animation: fadeInAnimation ease 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .container {
+            position: relative;
+            transition: .5s;
+            width: 100%;
+            /* height: 150vh; */
+            top: 0;
+            left: 0;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        
+
+
+        .main {
+            position: absolute;
+            width: 100%;
+            /* height: 100%; */
+            top: 0;
+            left: 0;
+            /* background-color: white; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .main_item {
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* flex-direction: column; */
+            flex-wrap: wrap;
+        }
+
+        .project {
+            position: relative;
+            width: 40vh;
+            height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 35px;
+            padding: 5px;
+            transition: .5s all ease;
+            flex-direction: column;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .project:hover {
+            background-color: rgba(202, 202, 202, 0.349);
+            transform: translateY(-10px);
+
+        }
+
+
+
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .head {
+            color: darkslategray;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .text {
+            font-size: 13px;
+            font-weight: 600;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.747);
+
+        }
+ 
